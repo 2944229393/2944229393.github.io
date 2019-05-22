@@ -1,6 +1,6 @@
 //使用时去掉if语句即可
 var THREE = THREE || {};
-if (!self.Int32Array) self.Int32Array = Array, self.Float32Array = Array;
+self.Int32Array = Array, self.Float32Array = Array;
 THREE.Color = function(a) {
   a !== void 0 && this.setHex(a);
   return this
@@ -2750,7 +2750,7 @@ $(function() {
   var windowHalfY = window.innerHeight / 2;
   var particles = [];
   var particleImage = new Image();
-  particleImage.src = "./image/snow.png";
+  particleImage.src = "welcome/image/snow.png";
   var snowNum = 500;
 
   function init() {

@@ -2772,7 +2772,6 @@ $(function() {
       scene.add(particle);
       particles.push(particle)
     }
-    container.style.backgroundImage = 'url("' + renderer.domElement.toDataURL() + '")';
     container.appendChild(renderer.domElement);
     document.addEventListener("mousemove", onDocumentMouseMove, false);
     setInterval(loop, 1000 / 40)

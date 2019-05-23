@@ -2759,7 +2759,6 @@ $(function() {
     scene = new THREE.Scene();
     scene.add(camera);
     renderer = new THREE.CanvasRenderer();
-    renderer.setAttribute("name","canvas");
     renderer.setSize(containerWidth, containerHeight);
     var material = new THREE.ParticleBasicMaterial({
       map: new THREE.Texture(particleImage)
@@ -2773,6 +2772,7 @@ $(function() {
       scene.add(particle);
       particles.push(particle)
     }
+    container.css("background-image",renderer.domElement.toDataURL());
     container.appendChild(renderer.domElement);
     document.addEventListener("mousemove", onDocumentMouseMove, false);
     setInterval(loop, 1000 / 40)

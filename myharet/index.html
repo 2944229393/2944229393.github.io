@@ -139,7 +139,7 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
-  <div class="snow-container">
+  <div class="snow-container" style="position: absolute">
     
   </div>
 
@@ -627,8 +627,12 @@
 
 
   <script src="/js/snow.js"></script>
-
-
+	<script>
+		window.onresize=function(){
+			var window_height = $(window).height();//获取浏览器窗口宽度
+			$('.snow-container').css("height","100%");
+		};
+	</script>
   
 
 

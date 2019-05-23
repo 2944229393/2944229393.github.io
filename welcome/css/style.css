@@ -218,7 +218,7 @@ li:nth-of-type(6){
 	position: absolute;
 	margin-top: 100px;
 	margin-bottom: 100px;
-	margin-left: calc( 45% - 240px);
+	margin-left: calc( 50% - 240px);
 }
 
 span {

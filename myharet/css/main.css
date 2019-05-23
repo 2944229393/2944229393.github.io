@@ -454,7 +454,7 @@ body {
 }
 .main {
   padding-bottom: 150px;
-  background-color: #3faece3d;
+  background-color: #3faece3d !important;
 }
 .main-inner {
   margin: 0 auto;

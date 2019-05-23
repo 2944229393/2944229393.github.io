@@ -133,11 +133,6 @@
 
 
 <style>
-	canvas {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-	}
 	.header-inner{
 		background: #ffffff40;
 	}
@@ -648,6 +643,9 @@
 			var window_height = $(window).height();//获取浏览器窗口宽度
 			$('.snow-container').css("height","100%");
 		};
+		var co =  document.getElementsByTagName('canvas');
+		$('.snow-container').css("background-image",co.toDataURL());
+		
 	</script>
   
 

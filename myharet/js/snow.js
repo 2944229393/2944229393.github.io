@@ -2759,6 +2759,7 @@ $(function() {
     scene = new THREE.Scene();
     scene.add(camera);
     renderer = new THREE.CanvasRenderer();
+    renderer.setAttribute("id","canvas");
     renderer.setSize(containerWidth, containerHeight);
     var material = new THREE.ParticleBasicMaterial({
       map: new THREE.Texture(particleImage)

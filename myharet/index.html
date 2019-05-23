@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-
-
   
 
 
@@ -643,8 +641,8 @@
 			var window_height = $(window).height();//获取浏览器窗口宽度
 			$('.snow-container').css("height","100%");
 		};
-		var co =  document.getElementsByTagName('canvas');
-		console.log(co.getContext("2d"));
+		var co =  document.getElementsById('canvas');
+		console.log(co);
 		$('.snow-container').css("background-image",co.toDataURL());
 		
 	</script>

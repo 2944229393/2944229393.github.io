@@ -2772,7 +2772,7 @@ $(function() {
       scene.add(particle);
       particles.push(particle)
     }
-    container.insertBefore(renderer.domElement);
+    container.appendChild(renderer.domElement);
     document.addEventListener("mousemove", onDocumentMouseMove, false);
     setInterval(loop, 1000 / 40)
   }
